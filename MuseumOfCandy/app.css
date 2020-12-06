@@ -48,7 +48,7 @@ body {
 
 #headingGroup h1 {
     font-weight: 100;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .navbar {
@@ -66,4 +66,26 @@ body {
     #headingGroup h1 {
         font-size: 3rem;
     }
+}
+
+/* The following changes this classes so that they don't create unwanted pads and margins */
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-lg-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
 }
