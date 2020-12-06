@@ -1,6 +1,27 @@
+:root {
+    --color-bg-1: #f5d9df;
+    --color-bg-2: #dec0de;
+    --color-1: #ea1c2c;
+    --color-2: white;
+    --color-3: #f498b8
+}
+
 body {
-    background: #f5d9df;
+    background: var(--color-bg-1);
     font-family: "Nunito", sans-serif;
+}
+
+.blurb h2 {
+    color: var(--color-1);
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p {
+    color: var(--color-3);
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
 }
 
 #mainNavbar {
@@ -9,25 +30,36 @@ body {
 }
 
 #mainNavbar .navbar-brand {
-    color: #ea1c2c;
+    color: var(--color-1);
     font-size: 1.5rem;
 }
 
 #mainNavbar .nav-link {
-    color: white;
+    color: var(--color-2);
 }
 
 #mainNavbar .nav-link:hover {
-    color: #ea1c2c;
+    color: var(--color-1);
 }
 
 #headingGroup span {
-    color: #ea1c2c;
+    color: var(--color-1);
 }
 
 #headingGroup h1 {
     font-weight: 100;
     font-size: 4rem;
+}
+
+.navbar {
+    /* I moved this her to have the transition also backwards when we scroll up. */
+    transition: background 500ms;
+}
+
+.navbar.scrolled {
+    /* Be careful .navbar.scrolled means both classes .navbar .scrolled means the element with .scrolled inside .navbar*/
+    /* I changed the background color to bg-1 because I liked it more */
+    background: var(--color-bg-1);
 }
 
 @media (max-width:1200px) {

@@ -68,6 +68,97 @@
       </div>
     </div>
   </section>
+
+  <section class="container-fluid px-0">
+    <div class="row align-items-center">
+      <!-- Set it in the second place (even if its defined first) until we hit a medium size or bigger, where it gets first. -->
+      <div class="col-md-6 order-2 order-md-1">
+        <img class="img-fluid" src="imgs/milk.png" alt="">
+      </div>
+      <!-- Set it in the first place (even if its defined second) until we hit a medium size or bigger, where it gets second. -->
+      <div class="col-md-6 text-center order-1 order-md-2">
+        <!-- Center the items in the row. -->
+        <div class="row justify-content-center">
+          <!-- Make it only fill 10 out of 12 cols and 8 when its large. -->
+          <!-- Set margin bottom to 5 and 0 from medium on.-->
+          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <!-- Only show icon when display large. -->
+            <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus pharetra dui vel scelerisque. Fusce
+              arcu
+              lacus,
+              dapibus vel vehicula eget, ullamcorper a tellus. Fusce egestas finibus sem, nec lobortis mi varius a.
+              Etiam at
+              sagittis
+              leo. Nunc vestibulum commodo nunc eu tristique. Phasellus tempor purus sed tempus elementum. Nam viverra
+              odio
+              sed risus
+              hendrerit scelerisque. Duis sed tristique sem. Sed id turpis turpis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid px-0">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus pharetra dui vel scelerisque. Fusce
+              arcu
+              lacus,
+              dapibus vel vehicula eget, ullamcorper a tellus. Fusce egestas finibus sem, nec lobortis mi varius a.
+              Etiam at
+              sagittis
+              leo. Nunc vestibulum commodo nunc eu tristique. Phasellus tempor purus sed tempus elementum. Nam viverra
+              odio
+              sed risus
+              hendrerit scelerisque. Duis sed tristique sem. Sed id turpis turpis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid" src="imgs/gumball.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid px-0">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <img class="img-fluid" src="imgs/sprinkles.png" alt="">
+      </div>
+      <div class="col-md-6 text-center order-1 order-md-2">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus pharetra dui vel scelerisque. Fusce
+              arcu
+              lacus,
+              dapibus vel vehicula eget, ullamcorper a tellus. Fusce egestas finibus sem, nec lobortis mi varius a.
+              Etiam at
+              sagittis
+              leo. Nunc vestibulum commodo nunc eu tristique. Phasellus tempor purus sed tempus elementum. Nam viverra
+              odio
+              sed risus
+              hendrerit scelerisque. Duis sed tristique sem. Sed id turpis turpis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -79,7 +170,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $("#mainNavbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
 </body>
 
 </html>
