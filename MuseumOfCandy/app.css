@@ -1,0 +1,91 @@
+:root {
+    --color-bg-1: #f5d9df;
+    --color-bg-2: #dec0de;
+    --color-1: #ea1c2c;
+    --color-2: white;
+    --color-3: #f498b8
+}
+
+body {
+    background: var(--color-bg-1);
+    font-family: "Nunito", sans-serif;
+}
+
+.blurb h2 {
+    color: var(--color-1);
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p {
+    color: var(--color-3);
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .navbar-brand {
+    color: var(--color-1);
+    font-size: 1.5rem;
+}
+
+#mainNavbar .nav-link {
+    color: var(--color-2);
+}
+
+#mainNavbar .nav-link:hover {
+    color: var(--color-1);
+}
+
+#headingGroup span {
+    color: var(--color-1);
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+.navbar {
+    /* I moved this her to have the transition also backwards when we scroll up. */
+    transition: background 500ms;
+}
+
+.navbar.scrolled {
+    /* Be careful .navbar.scrolled means both classes .navbar .scrolled means the element with .scrolled inside .navbar*/
+    /* I changed the background color to bg-1 because I liked it more */
+    background: var(--color-bg-1);
+}
+
+@media (max-width:1200px) {
+    #headingGroup h1 {
+        font-size: 3rem;
+    }
+}
+
+/* The following changes this classes so that they don't create unwanted pads and margins */
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-lg-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
