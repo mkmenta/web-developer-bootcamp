@@ -3,11 +3,21 @@ const p2Btn = document.querySelector('#p2Btn')
 const resetBtn = document.querySelector('#resetBtn')
 const p1Display = document.querySelector('#p1Display')
 const p2Display = document.querySelector('#p2Display')
+const winningScoreSelect = document.querySelector('#winningScoreSelect')
+
 
 let p1Score = 0;
 let p2Score = 0;
-let winningScore = 5;
+let winningScore = parseInt(winningScoreSelect.value);
 let gameOver = false;
+
+function resetGame() {
+    p1Score = 0;
+    p2Score = 0;
+    gameOver = false;
+    p2Display.textContent = p2Score;
+    p1Display.textContent = p1Score;
+}
 
 p1Btn.addEventListener('click', function () {
     if (!gameOver) {
@@ -17,7 +27,8 @@ p1Btn.addEventListener('click', function () {
         }
         p1Display.textContent = p1Score;
     }
-})
+});
+
 p2Btn.addEventListener('click', function () {
     if (!gameOver) {
         p2Score += 1;
@@ -26,11 +37,11 @@ p2Btn.addEventListener('click', function () {
         }
         p2Display.textContent = p2Score;
     }
-})
-resetBtn.addEventListener('click', function () {
-    p1Score = 0;
-    p2Score = 0;
-    gameOver = false;
-    p2Display.textContent = p2Score;
-    p1Display.textContent = p1Score;
-})
+});
+
+resetBtn.addEventListener('click', resetGame);
+
+winningScoreSelect.addEventListener('change', function () {
+    winningScore = parseInt(this.value);
+    resetGame();
+});
