@@ -30,7 +30,7 @@ p2Btn.addEventListener('click', function () {
 resetBtn.addEventListener('click', function () {
     p1Score = 0;
     p2Score = 0;
-    let gameOver = false;
+    gameOver = false;
     p2Display.textContent = p2Score;
     p1Display.textContent = p1Score;
 })
