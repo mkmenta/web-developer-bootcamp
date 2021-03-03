@@ -1,5 +1,3 @@
-
-
 # 4. HTML: Next Steps & Semantics
 
 ## 34. Block vs. Inline Elements - Divs and Spans
@@ -9,52 +7,52 @@
 
 
 ## 35. An Odd Assortment of Elements: HR, BR, Sup, & Sub
-**(1:45):** <br> should be only used inside a paragraph to break lines for example in a poem. Otherwise use always different paragraphs
+**(1:45):** \<br\> should be only used inside a paragraph to break lines for example in a poem. Otherwise use always different paragraphs
 
 
 ## 36. Entity Codes
 **(4:56):** You can add special symbols with &#XXX where XXX is an Entity Number
 
-**(3:16):** < is &lt; and > is &gt;
+**(3:16):** \< is &lt; and \> is &gt;
 
 
 ## 37. Intro to Semantic Markup
 **(5:47):** We can do everything with divs but is way better (also for Google Search) to use some containers that actually have some meaning (all of them to write as a replacement of a div in body):
 
-<nav> for a navbar
+\<nav\> for a navbar
 
-<header> for a header before the main part comes in
+\<header\> for a header before the main part comes in
 
-<main> for the main part
+\<main\> for the main part
 
-Inside here we create <section>
+Inside here we create \<section\>
 
-<footer> for the footer (about contacts etc).
+\<footer\> for the footer (about contacts etc).
 
 
 
 
 
 ## 38. Playing With Semantic Elements
-**(11:15):** <figure> element which should be e.g. an <img> + <figcaption>
+**(11:15):** \<figure\> element which should be e.g. an \<img\> + \<figcaption\>
 
-**(11:07):** <time datetime="2018-07-07">July 7</time><time datetime="2018-07-07">July 7</time>
+**(11:07):** \<time datetime="2018-07-07"\>July 7\</time\>\<time datetime="2018-07-07"\>July 7\</time\>
 
-**(6:10):** The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).
+**(6:10):** The HTML \<article\> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).The HTML \<article\> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).
 
 FOR EXAMPLE: something like a weather "widget" that you want to keep in the side of all your pages from your web.
 
-**(4:26):** <section> can be a header  + some paragraphs for example.
+**(4:26):** \<section\> can be a header  + some paragraphs for example.
 
-**(4:02):** From MDN: It's not necessary for all links to be contained in a <nav> element. <nav> is intended only for major block of navigation links; typically the <footer> element often has a list of links that don't need to be in a <nav> element.
+**(4:02):** From MDN: It's not necessary for all links to be contained in a \<nav\> element. \<nav\> is intended only for major block of navigation links; typically the \<footer\> element often has a list of links that don't need to be in a \<nav\> element.
 
-IDK if I can put a nav into a <main> for example as the wikipedia content one. Although I think I can. Because is just to say that that div is dedicated to navigation links.
+IDK if I can put a nav into a \<main\> for example as the wikipedia content one. Although I think I can. Because is just to say that that div is dedicated to navigation links.
 
 
 ## 40. VSCode Tip: Emmet
-**(5:20):** nav>ul>li*5>a[href=www.$.com]{Click me}
+**(5:20):** nav\>ul\>li*5\>a[href=www.$.com]{Click me}
 
-**(2:59):** > to nest elements, + to put them in the same level, * to multiply
+**(2:59):** \> to nest elements, + to put them in the same level, * to multiply
 
 just write the thing and hit tab
 
@@ -83,7 +81,7 @@ just write the thing and hit tab
 
 
 ## 50. HTML Buttons
-**(3:49):** NOT USE <input type="submit"> USE <button> or <button type="submit">
+**(3:49):** NOT USE \<input type="submit"\> USE \<button\> or \<button type="submit"\>
 
 To have a useless button use button type=button
 
@@ -95,4 +93,5 @@ To have a useless button use button type=button
 
 **(6:09):** use also minlength maxlength min and max to do some html validation
 
-**(2:41):** use <... required> field to force filling a field direclty from html
+**(2:41):** use \<... required\> field to force filling a field direclty from html
+
