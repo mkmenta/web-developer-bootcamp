@@ -13,7 +13,7 @@
 ## 36. Entity Codes
 **(4:56):** You can add special symbols with &#XXX where XXX is an Entity Number
 
-**(3:16):** \< is &lt; and \> is &gt;
+**(3:16):** \< is `&lt;` and \> is `&gt;
 
 
 ## 37. Intro to Semantic Markup
