@@ -210,95 +210,120 @@ try {
 # 22. Callbacks & Array Methods
 
 ## 222. The forEach Method
-**(0:25):** list.forEach( function (elem) { ...})
-
+**(0:25):** 
+```javascript
+list.forEach( function (elem) { ...})
+```
 
 ## 223. The map Method
-**(0:41):** list.map( function(elem){...})
-
+**(0:41):** 
+```javascript
+list.map( function(elem){...})
+```
 
 ## 224. Intro to Arrow Functions
 **(0:34):** Arrow (lambda) function:
-
-(x,y) =\> {return x+y;}
-
+```javascript
+(x, y) => {return x + y;}
+```
 
 ## 225. Arrow Function Implicit Returns
 **(1:28):** Arrow function with implicit return:
-
-(x,y)=\>(x+y)
-
+```javascript
+(x, y) => (x + y)
+```
 
 ## 227. setTimeout and setInterval
-**(2:27):** setTimeout(function, milliseconds)
-
+**(2:27):** 
+```javascript
+setTimeout(function, milliseconds)
+```
 
 ## 228. The filter Method
-**(0:05):** list.filter( elem =\> elem \> 5);
-
+**(0:05):** 
+```javascript
+list.filter( elem => elem > 5);
+```
 
 ## 229. Some & Every Methods
-**(0:16):** like a logical or or and:
-
-array.some(elem =\> elem.length\>4)
+**(0:16):** like a logical `or` or `and`:
+```javascript
+array.some(elem => elem.length > 4)
 
 array.every(...)
-
+```
 
 ## 230. The Notorious Reduce Method
-**(1:53):** array.reduce((accumulator, elem) =\> (accumulator + elem))
-
+**(1:53):** 
+```javascript
+array.reduce((accumulator, elem) => (accumulator + elem))
+```
 
 ## 231. Arrow Functions & 'this'
-**(5:00):** Here it says a weird thing but basically it says is better to use arrow functions in object methods.
+**(5:00):** *(double check)* basically it recommends to use arrow functions in object methods.
 
 
 
 # 23. Newer JavaScript Features
 
 ## 234. Spread in Function Calls
-**(2:44):** Spread in function calls: se puede hacer como *list en python haciendo ...array.Por ejemplo para Math.max(...nums) seria como un np.max(*list) (aunque numpy acepta un list)
+**(2:44):** Spread in function calls: you can use `...array` as you would do `*list` in python. For example,  `Math.max(...nums)` would be like `np.max(*list)`.
 
 
 ## 235. Spread with Array Literals
-**(1:35):** we can use spread to concat arrays as [...cats, ...dogs] or actually copy the array content
+**(1:35):** we can use spread to concat arrays as `[...cats, ...dogs]` or actually copy the array content.
 
 
 ## 236. Spread with Objects
-**(3:03):** we can convert an array into an object spreading {...[ARRAY]} and we'll get {0:'A', 1:'R' etc}
+**(3:03):** we can convert an array into an object spreading `{...[ARRAY]}` and we'll get `{0:'A', 1:'R' etc}`
 
-**(0:33):** We can also use a spread with objects like x = {whatever} y={...x}
+**(0:33):** We can also use a spread with objects like 
+```javascript
+x = {whatever};
+y = {...x};
+```
 
 
 ## 237. Rest Params
-**(3:26):** we can do a *kwargs (not with key, only value) by doing function x(...kwargs){}
+**(3:26):** we can do a `*args` (not with key, only value) by doing 
+```javascript
+function x(...args){
 
+}
+```
 
 ## 238. Destructuring Arrays
 **(2:02):** like in python we can unpack an array:
-
+```javascript
 const [gold, silver, bronze] = ['1', '2', '3'];
-
+```
 
 ## 239. Destructuring Objects
 **(3:22):** extract/unpack variables from object.
 
-with an object const a = {field1 : 5, field2: 'A'}
-
-I can do: const [field2, field1] = a
-
-or even const [field2: letter, field1: number] = a (and get the 5 assigned to number
+with an object 
+```javascript
+const a = {field1 : 5, field2: 'A'}
+```
+I can do: 
+```javascript
+const [field2, field1] = a
+```
+or even 
+```javascript
+const [field2: letter, field1: number] = a
+```
+and get the 5 assigned to number.
 
 
 ## 240. Destructuring Params
 **(2:10):** I can destructure an object directly in the params.
-
+```javascript
 const user = {firstName: x, lastName: y, age: z}
-
+```
 I can do:
-
+```javascript
 function myfun({firstName, lastName}){
-
-And directly use here the firstName and lastName
-
+  // And directly use here the firstName and lastName
 }
+```
