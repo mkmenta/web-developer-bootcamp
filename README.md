@@ -7,3 +7,4 @@ Exercises from the [Web Developer Boorcamp](https://www.udemy.com/course/the-web
 5. [Score Keeper](ScoreKeeper): DOM Events
 6. [Background Color](BackgroundColor): Creating Promises
 7. [First Express Server](FirstExpressServer): Express
+8. [EJS Example](EJS): Templating
