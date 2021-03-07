@@ -1,0 +1,34 @@
+<%- include('partials/header')%>
+    <div class="container">
+        <h1>Search results for "<%= q %>"
+        </h1>
+        <% if (data !==undefined) { %>
+            <h2>
+                <%= data.name %>
+            </h2>
+            <p>
+                <%= data.subscribers %> subscribers.
+            </p>
+            <p>
+                <%= data.description %>
+            </p>
+            <h3>Posts:</h3>
+            <% for (let post of data.posts) { %>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%=post.title%>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <%=post.author%>
+                        </h6>
+                    </div>
+                </div>
+                <% } %>
+                    <% } else { %>
+                        <p>No results found.</p>
+                        <% } %>
+
+    </div>
+
+    <%- include('partials/footer')%>

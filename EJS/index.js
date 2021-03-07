@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 const port = 3000;
-// const redditData = require('./data.json');
+const redditData = require('./data.json');
 
 app.use(express.static(path.join(__dirname, 'public')))
 
@@ -15,10 +15,10 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-// app.get('/r/:oneparam', (req, res) => {
-//     const { oneparam } = req.params
-//     res.send(`The ${oneparam} GET page.`)
-// })
+app.get('/search', (req, res) => {
+    const { q } = req.query;
+    res.render(`search`, { q, data: redditData[q] })
+})
 
 app.get('*', (req, res) => {
     res.send("I don't know that path!")
